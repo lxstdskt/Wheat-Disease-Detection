@@ -1,0 +1,26 @@
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>velvet_(30)_4.jpg</filename>
+<source>
+<database>orgaquant</database>
+<annotation>organoids</annotation>
+</source>
+    <size>
+        <width>610</width>
+        <height>460</height>
+        <depth>3</depth>
+    </size>
+            <segmented>0</segmented>
+    <object>
+<name>velvet</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+        <bndbox>
+            <xmin>147</xmin>
+            <ymin>144</ymin>
+            <xmax>412</xmax>
+            <ymax>349</ymax>
+        </bndbox>
+    </object>
+</annotation>

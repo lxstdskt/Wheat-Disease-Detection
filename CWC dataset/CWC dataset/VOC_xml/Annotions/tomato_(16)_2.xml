@@ -1,0 +1,26 @@
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>tomato_(16)_2.jpg</filename>
+<source>
+<database>orgaquant</database>
+<annotation>organoids</annotation>
+</source>
+    <size>
+        <width>655</width>
+        <height>510</height>
+        <depth>3</depth>
+    </size>
+            <segmented>0</segmented>
+    <object>
+<name>tomato</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+        <bndbox>
+            <xmin>64</xmin>
+            <ymin>73</ymin>
+            <xmax>462</xmax>
+            <ymax>408</ymax>
+        </bndbox>
+    </object>
+</annotation>

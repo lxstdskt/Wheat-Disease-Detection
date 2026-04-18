@@ -1,0 +1,35 @@
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>lettuce_(58).jpg</filename>
+<source>
+<database>orgaquant</database>
+<annotation>organoids</annotation>
+</source>
+    <size>
+        <width>800</width>
+        <height>600</height>
+        <depth>3</depth>
+    </size>
+            <segmented>0</segmented>
+    <object>
+<name>lettuce</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+        <bndbox>
+            <xmin>209</xmin>
+            <ymin>39</ymin>
+            <xmax>602</xmax>
+            <ymax>407</ymax>
+        </bndbox>
+    </object>
+    <object>
+<name>lettuce</name>
+        <bndbox>
+            <xmin>186</xmin>
+            <ymin>366</ymin>
+            <xmax>624</xmax>
+            <ymax>599</ymax>
+        </bndbox>
+    </object>
+</annotation>

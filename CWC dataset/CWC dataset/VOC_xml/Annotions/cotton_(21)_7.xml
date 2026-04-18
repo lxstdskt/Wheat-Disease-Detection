@@ -1,0 +1,35 @@
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>cotton_(21)_7.jpg</filename>
+<source>
+<database>orgaquant</database>
+<annotation>organoids</annotation>
+</source>
+    <size>
+        <width>632</width>
+        <height>479</height>
+        <depth>3</depth>
+    </size>
+            <segmented>0</segmented>
+    <object>
+<name>cotton</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+        <bndbox>
+            <xmin>236</xmin>
+            <ymin>193</ymin>
+            <xmax>423</xmax>
+            <ymax>363</ymax>
+        </bndbox>
+    </object>
+    <object>
+<name>cotton</name>
+        <bndbox>
+            <xmin>521</xmin>
+            <ymin>272</ymin>
+            <xmax>628</xmax>
+            <ymax>394</ymax>
+        </bndbox>
+    </object>
+</annotation>

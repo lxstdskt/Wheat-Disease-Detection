@@ -1,0 +1,395 @@
+
+/* 主窗口整体背景与字体（精致渐变 + 全局字体） */
+#MainWindow {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, 
+                                      stop: 0 #fafbfc, stop: 0.3 #f4f6f8, stop: 0.7 #eef1f4, stop: 1 #e8ecf0);
+    font-family: "Microsoft YaHei", "微软雅黑", "SimHei";
+    color: #1e293b;
+    font-size: 10pt;
+}
+
+/* 顶部标题栏大标题（精致样式） */
+QLabel#label_3 {
+    color: #0f172a;
+    font-size: 20pt;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                      stop: 0 #3b82f6, stop: 1 #8b5cf6);
+    -webkit-background-clip: text;
+    padding: 5px 0px;
+}
+
+/* 主页上显示检测用时、目标数目、置信度的数值标签做成高亮徽章 */
+QLabel#time_lb,
+QLabel#label_nums,
+QLabel#label_conf {
+    color: #0f172a;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dbeafe, stop: 1 #bfdbfe);
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-weight: 600;
+    border: 1px solid #93c5fd;
+}
+
+/* 分组框：精致卡片式圆角（带渐变和边框高光） */
+QGroupBox {
+    border: 1px solid #cbd5e1;
+    border-top: 2px solid #e2e8f0;
+    border-radius: 14px;
+    margin-top: 18px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 #ffffff, stop: 0.5 #fefefe, stop: 1 #f8fafc);
+    padding-top: 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: left top;
+    padding: 4px 12px;
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 12pt;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                      stop: 0 #3b82f6, stop: 1 #6366f1);
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+/* 顶部功能按钮（保存 / 退出） - 精致渐变按钮 */
+QPushButton#SaveBtn,
+QPushButton#ExitBtn {
+    color: #ffffff;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #4f46e5, stop: 0.5 #3b82f6, stop: 1 #2563eb);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 11pt;
+    min-height: 20px;
+}
+
+QPushButton#ExitBtn {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f87171, stop: 0.5 #ef4444, stop: 1 #dc2626);
+}
+
+QPushButton#SaveBtn:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #4338ca, stop: 0.5 #2563eb, stop: 1 #1d4ed8);
+    border: 1px solid #3b82f6;
+}
+
+QPushButton#ExitBtn:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #ef4444, stop: 0.5 #dc2626, stop: 1 #b91c1c);
+    border: 1px solid #ef4444;
+}
+
+QPushButton#SaveBtn:pressed,
+QPushButton#ExitBtn:pressed {
+    background-color: #1e293b;
+    border: 1px solid #0f172a;
+}
+
+/* 图标按钮（选择图片 / 视频 / 摄像头 / 文件夹）- 精致悬停效果 */
+QPushButton#PicBtn,
+QPushButton#VideoBtn,
+QPushButton#CapBtn,
+QPushButton#FilesBtn {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+QPushButton#PicBtn:hover,
+QPushButton#VideoBtn:hover,
+QPushButton#CapBtn:hover,
+QPushButton#FilesBtn:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 rgba(59, 130, 246, 0.12), stop: 1 rgba(37, 99, 235, 0.08));
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 8px;
+}
+
+QPushButton#PicBtn:pressed,
+QPushButton#VideoBtn:pressed,
+QPushButton#CapBtn:pressed,
+QPushButton#FilesBtn:pressed {
+    background-color: rgba(59, 130, 246, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+/* 文本输入框与下拉框（精致细边框 + 圆角 + 聚焦高光） */
+QLineEdit,
+QComboBox {
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #1e293b;
+    selection-background-color: #dbeafe;
+    selection-color: #0f172a;
+}
+
+QLineEdit:focus,
+QComboBox:focus {
+    border: 2px solid #3b82f6;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #ffffff, stop: 1 #f8fafc);
+}
+
+QLineEdit:hover,
+QComboBox:hover {
+    border: 1.5px solid #94a3b8;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+    border-left: 1px solid #e2e8f0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #f8fafc;
+}
+
+QComboBox::drop-down:hover {
+    background-color: #f1f5f9;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #475569;
+    width: 0;
+    height: 0;
+    margin-right: 4px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    selection-background-color: #dbeafe;
+    selection-color: #0f172a;
+    padding: 4px;
+}
+
+/* 检测结果表格（精致卡片风格 + 高亮选中行） */
+QTableWidget {
+    gridline-color: #e2e8f0;
+    selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                                stop: 0 #dbeafe, stop: 1 #e0e7ff);
+    selection-color: #0f172a;
+    background-color: #ffffff;
+    alternate-background-color: #fafbfc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+QTableWidget::item {
+    padding: 4px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                      stop: 0 #dbeafe, stop: 1 #e0e7ff);
+    color: #0f172a;
+    font-weight: 600;
+}
+
+QHeaderView::section {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f8fafc, stop: 0.5 #f1f5f9, stop: 1 #e2e8f0);
+    color: #0f172a;
+    padding: 10px 8px;
+    border: none;
+    border-right: 1px solid #cbd5e1;
+    border-bottom: 2px solid #cbd5e1;
+    font-weight: 800;
+    font-size: 10pt;
+}
+
+QHeaderView::section:first {
+    border-top-left-radius: 10px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+/* 结果区域-模型选择相关标签稍微强调 */
+QLabel#model_label {
+    color: #374151;
+    font-weight: 600;
+}
+
+/* 滚动区域背景与滚动条（精致样式） */
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                stop: 0 #f1f5f9, stop: 1 #e2e8f0);
+    width: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                stop: 0 #94a3b8, stop: 1 #64748b);
+    min-height: 30px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                stop: 0 #64748b, stop: 1 #475569);
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #f1f5f9, stop: 1 #e2e8f0);
+    height: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #94a3b8, stop: 1 #64748b);
+    min-width: 30px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #64748b, stop: 1 #475569);
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Tab 导航栏精致样式 */
+QTabWidget::pane {
+    border: none;
+    background: transparent;
+    top: -1px;
+}
+
+QTabBar::tab {
+    min-width: 160px;
+    padding: 12px 24px;
+    color: #64748b;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f8fafc, stop: 1 #f1f5f9);
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: 700;
+    font-size: 11pt;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    color: #0f172a;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #ffffff, stop: 1 #f8fafc);
+    border-bottom: 4px solid #3b82f6;
+    border-top: 2px solid #e2e8f0;
+    border-left: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+}
+
+QTabBar::tab:hover:!selected {
+    color: #3b82f6;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f8fafc, stop: 1 #f1f5f9);
+    border-bottom: 3px solid rgba(59, 130, 246, 0.5);
+}
+
+QTabBar::tab:first {
+    margin-left: 0;
+}
+
+QTabBar::tab:last {
+    margin-right: 0;
+}
+
+/* 统计信息页汇总标签样式（精致卡片） */
+QLabel#statsSummaryLabel {
+    font-size: 11pt;
+    font-weight: 800;
+    color: #0f172a;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 #f8fafc, stop: 0.5 #f1f5f9, stop: 1 #e2e8f0);
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1.5px solid #cbd5e1;
+    border-top: 2px solid #3b82f6;
+}
+
+/* 统计页图表容器样式 */
+QGroupBox#statsChartGroup {
+    border: 1.5px solid #cbd5e1;
+    border-radius: 14px;
+    margin-top: 18px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 #ffffff, stop: 0.5 #fefefe, stop: 1 #f8fafc);
+    padding-top: 12px;
+}
+
+/* 标签样式优化 */
+QLabel {
+    color: #1e293b;
+}
+
+QLabel#label_4,
+QLabel#label_6,
+QLabel#label_7,
+QLabel#label_8,
+QLabel#label_9,
+QLabel#label,
+QLabel#label_10,
+QLabel#label_11 {
+    color: #475569;
+    font-weight: 600;
+}
+
+/* 坐标值标签样式 */
+QLabel#label_xmin,
+QLabel#label_ymin,
+QLabel#label_xmax,
+QLabel#label_ymax {
+    color: #dc2626;
+    font-weight: 700;
+    background-color: #fee2e2;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* 图片显示区域边框 */
+QLabel#label_show {
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}

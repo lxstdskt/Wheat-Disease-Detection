@@ -1,0 +1,7 @@
+#800*600
+train: ../train/images #2200
+val: ../val/images #440
+test: ../test/images #110
+
+nc: 11
+names: ['bluegrass','chenopodium_album','cirsium_setosum','corn','sedge','cotton', 'nightshade', 'tomato', 'velvet','lettuce','radish']

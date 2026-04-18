@@ -1,0 +1,26 @@
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>nightshade_(8)_2.jpg</filename>
+<source>
+<database>orgaquant</database>
+<annotation>organoids</annotation>
+</source>
+    <size>
+        <width>634</width>
+        <height>494</height>
+        <depth>3</depth>
+    </size>
+            <segmented>0</segmented>
+    <object>
+<name>velvet</name>
+                    <pose>Unspecified</pose>
+                    <truncated>0</truncated>
+                    <difficult>0</difficult>
+        <bndbox>
+            <xmin>325</xmin>
+            <ymin>130</ymin>
+            <xmax>513</xmax>
+            <ymax>383</ymax>
+        </bndbox>
+    </object>
+</annotation>
